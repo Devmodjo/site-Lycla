@@ -1,10 +1,9 @@
 import React from "react";
 
-export function Banner(){
-  
-
+export function Banner() {
+    
 }
 
-export function Navbar(){
+export function Navbar() {
 
 }
