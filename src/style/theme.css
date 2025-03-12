@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "LatoFont";
+  src: url(./../font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "PoppinsFont";
+  src: url(./../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "MonsterratFont";
+  src: url(./../font/Montserrat/Montserrat-Regular.ttf);
+}
