@@ -40,6 +40,10 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.c2{
+  width: 100%;
+  position: relative;
+}
 
 .welcome-container {
   /* text-align: center; */
@@ -48,4 +52,16 @@ nav {
   top: 10%;
   animation: fadeIn 2s forwards;
   /* color: aliceblue; */
+}
+.containFooter{
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 720px){
+  .containFooter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .socialMedia{ margin-left: 15px; }
 }

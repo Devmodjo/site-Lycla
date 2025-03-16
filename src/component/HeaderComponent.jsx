@@ -12,6 +12,7 @@ const linkStyle = {
   fontFamily: "LatoFont",
   fontWeight: "bold",
   color: "whitesmoke",
+  fontSize: "14px",
   // color: "rgb(192, 222, 241)",
 };
 
@@ -28,15 +29,27 @@ export function Banner() {
             fontFamily: "LatoFont",
             fontSize: "35px",
             fontWeight: "bold",
-            color : 'white'
+            color: "white",
           }}
         >
           <FadeInSection>
             <b>Lycée Classique </b>
             <br />
-            <SubTitleFadeIn delay={.6}>
+            <SubTitleFadeIn delay={0.6}>
               <b>de Dschang</b>
             </SubTitleFadeIn>
+
+            <div className="d-flex container" style={{ fontSize: "15px" }}>
+              <SubTitleFadeIn delay={1}>
+                <b style={{ marginRight: "0.5em" }}>Discipline</b>
+              </SubTitleFadeIn>
+              <SubTitleFadeIn delay={1.2}>
+                <b style={{ marginRight: "0.5em" }}> Travail </b>
+              </SubTitleFadeIn>
+              <SubTitleFadeIn delay={1.3}>
+                <b> pour l'excellence </b>
+              </SubTitleFadeIn>
+            </div>
           </FadeInSection>
         </div>
         <div className="rightBox"></div>
@@ -48,7 +61,10 @@ export function Banner() {
 export function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light shadow-lg p-3">
+      <nav
+        className="navbar navbar-expand-lg navbar-light shadow-lg p-3"
+        style={{ position: "fixed", zIndex: "999" }}
+      >
         <div className="container">
           <a className="navbar-brand" style={styleTitle} href="#">
             Lycla Dschang
@@ -67,7 +83,7 @@ export function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#" style={linkStyle}>
+                <a className="nav-link" href="#home" style={linkStyle}>
                   Acceuil
                 </a>
               </li>
@@ -78,7 +94,7 @@ export function Navbar() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#" style={linkStyle}>
-                  Equipe pedagogique
+                  Equipe pédagogique
                 </a>
               </li>
               <li className="nav-item">
