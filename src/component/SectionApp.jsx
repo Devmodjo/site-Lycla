@@ -1,6 +1,6 @@
 import React from "react";
 import { AppearOnScroll } from "./ScrollEffect";
-
+import { SubTitleFadeIn } from "./ScrollEffect";
 // presentaion des filière du lycée classqieu
 export function FiliereSection({ img1, img2, img3 }) {
   return (
@@ -84,7 +84,12 @@ export function EquipePedaSection() {
         pédagogique est attentive aux besoins des élèves et met tout en œuvre
         pour les aider à réussir.
       </p>
-      <div id="carouselExampleIndicators" className="carousel slide container justify-content-center" data-bs-ride="carousel">
+
+      <div
+        id="carouselExampleIndicators"
+        className="carousel slide container d-flex justify-content-center"
+        data-bs-ride="carousel"
+      >
         <div className="carousel-indicators">
           <button
             type="button"
@@ -100,51 +105,67 @@ export function EquipePedaSection() {
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
         </div>
+
         <div className="carousel-inner">
+          {/* Slide 1 */}
           <div className="carousel-item active">
-            <div className="card" style={{ width: "18rem" }}>
-                <img src="/src/assets/provi.jpg" className="card-img-top" alt="proviseur"/>
-              <div className="card-body">
-                <h5 className="card-title">MR. ATEM NDE JEAN CLAUDE</h5>
-                <p className="card-text">
-                  proviseur
-                </p>
+            <div className="row">
+              <div className="col-12 col-md-4">
+                <SubTitleFadeIn delay={0.5}>
+                  <div className="card" style={{ width: "18rem" }}>
+                    <img
+                      src="/src/assets/provi.jpg"
+                      className="card-img-top"
+                      alt="proviseur"
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">MR. ATEM NDE JEAN CLAUDE</h5>
+                      <p className="card-text">Proviseur</p>
+                    </div>
+                  </div>
+                </SubTitleFadeIn>
               </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="card" style={{ width: "18rem" }}>
-              <img src="/src/assets/8.jpg" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">MR. FOUETLEFACK</h5>
-                <p className="card-text">
-                  censeur ( <i>coach minsitre urgentiste</i> )
-                </p>
+              <div className="col-12 col-md-4">
+                <SubTitleFadeIn delay={0.6}>
+                  <div className="card" style={{ width: "18rem" }}>
+                    <img
+                      src="/src/assets/8.jpg"
+                      className="card-img-top"
+                      alt="mr fouetlefack"
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">MR. FOUETLEFACK</h5>
+                      <p className="card-text">
+                        Censeur ( <i>coach ministre urgentiste</i> )
+                      </p>
+                    </div>
+                  </div>
+                </SubTitleFadeIn>
               </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="card" style={{ width: "18rem" }}>
-              <img src="..." className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title3</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+              <div className="col-12 col-md-4">
+                <SubTitleFadeIn delay={0.7}>
+                  <div className="card" style={{ width: "18rem" }}>
+                    <img
+                      src="/src/assets/kj9.jpg"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Mme. Bernard</h5>
+                      <p className="card-text">
+                        Conseil Orientation Scolaire ( <i>CSO</i> )
+                      </p>
+                    </div>
+                  </div>
+                </SubTitleFadeIn>
               </div>
             </div>
           </div>
         </div>
+
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
@@ -156,7 +177,7 @@ export function EquipePedaSection() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
