@@ -13,7 +13,7 @@ function App() {
       <Banner />
       <Main>
         <AppearOnScroll>
-          <FiliereSection img1={'./asset/4.jpg'} />
+          <FiliereSection />
         </AppearOnScroll>
         <AppearOnScroll>
           <EquipePedaSection />

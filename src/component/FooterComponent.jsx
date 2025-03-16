@@ -15,7 +15,7 @@ export function Footer() {
         >
           <h3 style={{ fontFamily: "PoppinsFont" }}>Nos réseaux</h3>
           <div className="socialMedia media1">
-            <FaFacebook /> <a href="#" target="_blank">Facebook</a>
+            <FaFacebook /> <a href="https://web.facebook.com/profile.php?id=61556309039229" target="_blank">Facebook</a>
           </div>
           <div className="socialMedia media2">
             <FaInstagram /> <a href="#">Instagram</a>

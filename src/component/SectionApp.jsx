@@ -2,7 +2,7 @@ import React from "react";
 import { AppearOnScroll } from "./ScrollEffect";
 import { SubTitleFadeIn } from "./ScrollEffect";
 // presentaion des filière du lycée classqieu
-export function FiliereSection({ img1, img2, img3 }) {
+export function FiliereSection() {
   return (
     <div
       className="container d-flex flex-column align-items-center p-3"
@@ -75,7 +75,7 @@ export function EquipePedaSection() {
       id="equipe"
     >
       <h4 style={{ fontFamily: "LatoFont", fontWeight: "bold" }}>
-        Découvrez notre équipe Pedagogique{" "}
+        Découvrez notre équipe Pédagogique{" "}
       </h4>
       <p>
         L'équipe pédagogique du lycée classique de Dschang est composée de
