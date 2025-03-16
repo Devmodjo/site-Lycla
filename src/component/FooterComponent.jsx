@@ -60,7 +60,7 @@ export function Footer() {
         </div>
       </div>
       <br />
-      <span className="container d-flex justify-content-center"><i>develloped by Modjo victor &copy; all right reserved</i></span>
+      <span className="container d-flex justify-content-center"><i>develloped by <a href="https://modjovictor.netlify.app" target="_blank">Modjo victor</a> &copy; all right reserved</i></span>
     </footer>
   );
 }
