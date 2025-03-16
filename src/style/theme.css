@@ -33,7 +33,13 @@ nav {
   background-position: center; 
   background-size: cover;
 }
-
+/* .card1{
+  width: 100%;
+  height: 25%;
+  background-image: url(/src/assets/provi.jpg);
+  background-position: center; 
+  background-size: cover;
+} */
 .c1{
   position: absolute;
   top: 50%;

@@ -93,7 +93,7 @@ export function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={linkStyle}>
+                <a className="nav-link" href="#equipe" style={linkStyle}>
                   Equipe pédagogique
                 </a>
               </li>

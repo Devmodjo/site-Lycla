@@ -2,7 +2,7 @@ import React from "react";
 import { AppearOnScroll } from "./ScrollEffect";
 
 // presentaion des filière du lycée classqieu
-export function FiliereSection( {img1, img2, img3} ) {
+export function FiliereSection({ img1, img2, img3 }) {
   return (
     <div
       className="container d-flex flex-column align-items-center p-3"
@@ -23,7 +23,7 @@ export function FiliereSection( {img1, img2, img3} ) {
           <div className="col-12 col-md-4 mb-2 w-100">
             <div className="card">
               <div className="card-body">
-                <img src={img1} alt="" srcset="" className="w-30 h-30" />
+                {/* <img src={img1} alt="" srcset="" className="w-30 h-30" /> */}
                 <h5 className="card-title">Filière Scientifique(C & D)</h5>
                 <p className="card-text">
                   La filière scientifique est une filière de formation générale
@@ -54,9 +54,9 @@ export function FiliereSection( {img1, img2, img3} ) {
               <div className="card-body">
                 <h5 className="card-title">Filière Professionel(TI)</h5>
                 <p className="card-text">
-                  La filière professionel est une filière de formation générale et technique
-                  qui prépare les élèves aux études supérieures dans les
-                  domaines de l'informatique et de la gestion.
+                  La filière professionel est une filière de formation générale
+                  et technique qui prépare les élèves aux études supérieures
+                  dans les domaines de l'informatique et de la gestion.
                 </p>
               </div>
             </div>
@@ -69,7 +69,107 @@ export function FiliereSection( {img1, img2, img3} ) {
 
 // presentation de l'equipe pedagogique
 export function EquipePedaSection() {
-  return <div></div>;
+  return (
+    <div
+      className="container d-flex flex-column align-items-center p-3"
+      id="equipe"
+    >
+      <h4 style={{ fontFamily: "LatoFont", fontWeight: "bold" }}>
+        Découvrez notre équipe Pedagogique{" "}
+      </h4>
+      <p>
+        L'équipe pédagogique du lycée classique de Dschang est composée de
+        professeurs qualifiés et expérimentés. Elle est chargée de dispenser les
+        cours et de suivre les élèves dans leur apprentissage. L'équipe
+        pédagogique est attentive aux besoins des élèves et met tout en œuvre
+        pour les aider à réussir.
+      </p>
+      <div id="carouselExampleIndicators" className="carousel slide container justify-content-center" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <div className="card" style={{ width: "18rem" }}>
+                <img src="/src/assets/provi.jpg" className="card-img-top" alt="proviseur"/>
+              <div className="card-body">
+                <h5 className="card-title">MR. ATEM NDE JEAN CLAUDE</h5>
+                <p className="card-text">
+                  proviseur
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="card" style={{ width: "18rem" }}>
+              <img src="/src/assets/8.jpg" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">MR. FOUETLEFACK</h5>
+                <p className="card-text">
+                  censeur ( <i>coach minsitre urgentiste</i> )
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="card" style={{ width: "18rem" }}>
+              <img src="..." className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Card title3</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  );
 }
 
 // a propos
