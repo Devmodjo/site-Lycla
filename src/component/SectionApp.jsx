@@ -195,5 +195,9 @@ export function EquipePedaSection() {
 
 // a propos
 export function AboutSection() {
-  return <div></div>;
+  return (
+    <div className="container d-flex flex-column align-items-center p-3">
+      <h4 style={{ fontFamily: 'LatoFont', fontWeight: 'bold' }}>À propos de nous !</h4>
+    </div>
+  );
 }
