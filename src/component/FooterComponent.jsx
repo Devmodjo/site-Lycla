@@ -60,7 +60,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="Faq container m-2">
+      <div className="Faq container">
           <h3 style={{ fontFamily: "PoppinsFont", marginTop: "2rem" }}>FaQ</h3>
           <div className="containFaq d-flex " style={{ textAlign: "justify"}}>
             <span>

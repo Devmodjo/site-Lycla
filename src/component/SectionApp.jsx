@@ -195,7 +195,7 @@ export function ContactSection() {
   const [message, setMessage] = React.useState("");
   return (
     <div
-      className="container d-flex flex-column align-items-center p-3"
+      className="container d-flex flex-column align-items-center"
       id="contact"
     >
       <h4 style={{ fontFamily: "LatoFont", fontWeight: "bold" }}>
@@ -217,7 +217,7 @@ export function ContactSection() {
         <div className="form w-100">
           <SubTitleFadeIn delay={0.5}>
             <form>
-              <div className="">
+              <div className="" style={{ width: "100%", overflowX: "hidden" }}>
                 <label htmlFor="exampleInputEmail1" className="form-label">
                   Email address
                 </label>
@@ -257,7 +257,7 @@ export function ContactSection() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary m-2">
+              <button type="submit" className="btn btn-primary">
                 Envoyer
               </button>
             </form>
