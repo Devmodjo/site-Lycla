@@ -59,6 +59,18 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <div className="Faq container m-3">
+          <h3 style={{ fontFamily: "PoppinsFont" }}>FaQ</h3>
+          <div className="containFaq d-flex " style={{ textAlign: "justify"}}>
+            <span>
+              Posé nous vos question<br />
+              <form method="post" className="d-flex">
+                <input type="text" className="form-control" placeholder="votre question" />
+                <input type="submit" value="envoyer" className="btn btn-primary" />
+              </form>
+            </span>
+          </div>
+        </div>
       <br />
       <span className="container d-flex justify-content-center"><i>develloped by <a href="https://modjovictor.netlify.app" target="_blank">Modjo victor</a> &copy; all right reserved</i></span>
     </footer>

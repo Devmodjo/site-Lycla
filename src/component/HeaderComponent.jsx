@@ -102,6 +102,11 @@ export function Navbar() {
                   A propos
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#about" style={linkStyle}>
+                  Nous Contactez
+                </a>
+              </li>
             </ul>
           </div>
         </div>
