@@ -257,7 +257,7 @@ export function ContactSection() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary m-2">
                 Envoyer
               </button>
             </form>
