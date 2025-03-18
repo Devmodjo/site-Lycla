@@ -227,6 +227,7 @@ export function ContactSection() {
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="example@gmail.com"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <div id="emailHelp" className="form-text">
                   We'll never share your email with anyone else.
@@ -241,6 +242,7 @@ export function ContactSection() {
                   className="form-control"
                   id="exampleInputName"
                   placeholder="ex: Kenfack Rosquine"
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="">
@@ -252,6 +254,7 @@ export function ContactSection() {
                   id="exampleInputMessage"
                   placeholder="ex: je voudrais avoir des informations sur les inscriptions"
                   rows="3"
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary m-2">
