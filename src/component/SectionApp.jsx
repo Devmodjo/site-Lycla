@@ -1,9 +1,9 @@
 import React from "react";
 import { AppearOnScroll } from "./ScrollEffect";
 import { SubTitleFadeIn } from "./ScrollEffect";
-import kj9 from '../assets/kj9.jpg';
-import provi from '../assets/provi.jpg';
-import cs from '../assets/8.jpg';
+import kj9 from "../assets/kj9.jpg";
+import provi from "../assets/provi.jpg";
+import cs from "../assets/8.jpg";
 
 // presentaion des filière du lycée classqieu
 export function FiliereSection() {
@@ -118,11 +118,7 @@ export function EquipePedaSection() {
               <div className="col-12 col-md-4">
                 <SubTitleFadeIn delay={0.5}>
                   <div className="card" style={{ width: "18rem" }}>
-                    <img
-                      src={provi}
-                      className="card-img-top"
-                      alt="proviseur"
-                    />
+                    <img src={provi} className="card-img-top" alt="proviseur" />
                     <div className="card-body">
                       <h5 className="card-title">MR. ATEM NDE JEAN CLAUDE</h5>
                       <p className="card-text">Proviseur</p>
@@ -150,11 +146,7 @@ export function EquipePedaSection() {
               <div className="col-12 col-md-4">
                 <SubTitleFadeIn delay={0.7}>
                   <div className="card" style={{ width: "18rem" }}>
-                    <img
-                      src={kj9}
-                      className="card-img-top"
-                      alt="Mme Daouda"
-                    />
+                    <img src={kj9} className="card-img-top" alt="Mme Daouda" />
                     <div className="card-body">
                       <h5 className="card-title">Mme. DAOUDA</h5>
                       <p className="card-text">
@@ -197,11 +189,89 @@ export function EquipePedaSection() {
   );
 }
 
+export function ContactSection() {
+  const [email, setEmail] = React.useState("");
+  const [name, setName] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  return (
+    <div
+      className="container d-flex flex-column align-items-center p-3"
+      id="contact"
+    >
+      <h4 style={{ fontFamily: "LatoFont", fontWeight: "bold" }}>
+        Contactez-nous !
+      </h4>
+      <div className="d-flex flex-column align-items-center">
+        <div
+          className="textContact justify-content-center"
+          style={{ textAlign: "justify" }}
+        >
+          <b>
+            <h5>📨 Envoyez-nous un message</h5>
+          </b>
+          Vous pouvez également nous écrire en remplissant le formulaire
+          ci-dessous. Nous nous engageons à vous répondre dans les plus brefs
+          délais. Nous vous remercions de votre intérêt pour notre établissement
+          et espérons pouvoir vous aider rapidement. À très bientôt !
+        </div> <br />
+        <div className="form w-100">
+          <SubTitleFadeIn delay={0.5}>
+            <form>
+              <div className="">
+                <label htmlFor="exampleInputEmail1" className="form-label">
+                  Email address
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" className="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div className="">
+                <label htmlFor="exampleInputName" className="form-label">
+                  Nom
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="exampleInputName"
+                />
+              </div>
+              <div className="">
+                <label htmlFor="exampleInputMessage" className="form-label">
+                  Message
+                </label>
+                <textarea
+                  className="form-control"
+                  id="exampleInputMessage"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Envoyer
+              </button>
+            </form>
+          </SubTitleFadeIn>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // a propos
 export function AboutSection() {
   return (
-    <div className="container d-flex flex-column align-items-center p-3" id="about">
-      <h4 style={{ fontFamily: 'LatoFont', fontWeight: 'bold' }}>À propos de nous !</h4>
+    <div
+      className="container d-flex flex-column align-items-center p-3"
+      id="about"
+    >
+      <h4 style={{ fontFamily: "LatoFont", fontWeight: "bold" }}>
+        À propos de nous !
+      </h4>
     </div>
   );
 }

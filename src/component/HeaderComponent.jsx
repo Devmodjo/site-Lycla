@@ -103,7 +103,7 @@ export function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about" style={linkStyle}>
+                <a className="nav-link" href="#contact" style={linkStyle}>
                   Nous Contactez
                 </a>
               </li>

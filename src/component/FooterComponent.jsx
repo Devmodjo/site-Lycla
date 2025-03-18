@@ -63,10 +63,10 @@ export function Footer() {
           <h3 style={{ fontFamily: "PoppinsFont" }}>FaQ</h3>
           <div className="containFaq d-flex " style={{ textAlign: "justify"}}>
             <span>
-              Posé nous vos question<br />
+              Posé nous vos questions<br />
               <form method="post" className="d-flex">
-                <input type="text" className="form-control" placeholder="votre question" />
-                <input type="submit" value="envoyer" className="btn btn-primary" />
+                <input type="text" className="form-control" placeholder="votre question" /> 
+                <input type="submit" value="envoyer" className="btn btn-primary" /> 
               </form>
             </span>
           </div>
