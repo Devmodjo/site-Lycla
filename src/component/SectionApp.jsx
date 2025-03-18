@@ -226,6 +226,7 @@ export function ContactSection() {
                   className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  placeholder="example@gmail.com"
                 />
                 <div id="emailHelp" className="form-text">
                   We'll never share your email with anyone else.
@@ -239,6 +240,7 @@ export function ContactSection() {
                   type="text"
                   className="form-control"
                   id="exampleInputName"
+                  placeholder="ex: Kenfack Rosquine"
                 />
               </div>
               <div className="">
@@ -248,10 +250,11 @@ export function ContactSection() {
                 <textarea
                   className="form-control"
                   id="exampleInputMessage"
+                  placeholder="ex: je voudrais avoir des informations sur les inscriptions"
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary m-2">
                 Envoyer
               </button>
             </form>
