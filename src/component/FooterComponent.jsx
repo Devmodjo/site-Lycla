@@ -1,7 +1,8 @@
+import { text } from "framer-motion/client";
 import React from "react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-
+const styleLink = { textDecoration: "none", color: "grey" };
 export function Footer() {
   return (
     <footer className="bg-light w-100">
@@ -15,13 +16,13 @@ export function Footer() {
         >
           <h3 style={{ fontFamily: "PoppinsFont" }}>Nos réseaux</h3>
           <div className="socialMedia media1">
-            <FaFacebook /> <a href="https://web.facebook.com/profile.php?id=61556309039229" target="_blank">Facebook</a>
+            <FaFacebook /> <a href="https://web.facebook.com/profile.php?id=61556309039229" target="_blank" style={styleLink}>Facebook</a>
           </div>
           <div className="socialMedia media2">
-            <FaInstagram /> <a href="#">Instagram</a>
+            <FaInstagram /> <a href="#" style={styleLink}>Instagram</a>
           </div>
           <div className="socialMedia media3">
-            <FaWhatsapp /> <a href="#">Whatsapp</a>
+            <FaWhatsapp /> <a href="#" style={styleLink}>Whatsapp</a>
           </div>
         </div>
         <div className="info  d-flex flex-column container">
