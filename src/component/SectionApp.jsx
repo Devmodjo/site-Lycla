@@ -1,6 +1,10 @@
 import React from "react";
 import { AppearOnScroll } from "./ScrollEffect";
 import { SubTitleFadeIn } from "./ScrollEffect";
+import kj9 from '../assets/kj9.jpg';
+import provi from '../assets/provi.jpg';
+import cs from '../assets/8.jpg';
+
 // presentaion des filière du lycée classqieu
 export function FiliereSection() {
   return (
@@ -115,7 +119,7 @@ export function EquipePedaSection() {
                 <SubTitleFadeIn delay={0.5}>
                   <div className="card" style={{ width: "18rem" }}>
                     <img
-                      src="/src/assets/provi.jpg"
+                      src={provi}
                       className="card-img-top"
                       alt="proviseur"
                     />
@@ -130,7 +134,7 @@ export function EquipePedaSection() {
                 <SubTitleFadeIn delay={0.6}>
                   <div className="card" style={{ width: "18rem" }}>
                     <img
-                      src="/src/assets/8.jpg"
+                      src={cs}
                       className="card-img-top"
                       alt="mr fouetlefack"
                     />
@@ -147,12 +151,12 @@ export function EquipePedaSection() {
                 <SubTitleFadeIn delay={0.7}>
                   <div className="card" style={{ width: "18rem" }}>
                     <img
-                      src="/src/assets/kj9.jpg"
+                      src={kj9}
                       className="card-img-top"
-                      alt="..."
+                      alt="Mme Daouda"
                     />
                     <div className="card-body">
-                      <h5 className="card-title">Mme. Bernard</h5>
+                      <h5 className="card-title">Mme. DAOUDA</h5>
                       <p className="card-text">
                         Conseil Orientation Scolaire ( <i>CSO</i> )
                       </p>
