@@ -21,9 +21,9 @@ function App() {
         <AppearOnScroll>
           <ContactSection />
         </AppearOnScroll>
-        <AppearOnScroll>
+        {/* <AppearOnScroll>
           <AboutSection />
-        </AppearOnScroll>
+        </AppearOnScroll> */}
       </Main>
       <Footer />
     </>

@@ -97,11 +97,11 @@ export function Navbar() {
                   Equipe pédagogique
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#about" style={linkStyle}>
                   A propos
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-link" href="#contact" style={linkStyle}>
                   Nous Contactez
